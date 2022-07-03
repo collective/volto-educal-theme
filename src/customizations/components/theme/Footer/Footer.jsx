@@ -1,33 +1,16 @@
 import React from 'react';
-import { Button, Input, List } from 'semantic-ui-react';
+import { Button, Input, Image, List } from 'semantic-ui-react';
+import LogoImage from '../../../../../theme/themes/educal/assets/images/logo/logo-2.png';
 
 // Let's avoid responsiveness for now
 // xxl ration 3:2:2:4
 const Footer = () => (
   <footer>
-    <div
-      style={{
-        background: '#0e1133',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        color: '#ffffff',
-        padding: '0px 20px',
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'space-around',
-          padding: '40px 0px 20px 0px',
-          textAlign: 'left',
-        }}
-      >
+    <div className="footerRoot">
+      <div className="footerMain">
         <div style={{ maxWidth: '27.28%' }}>
-          <h2>educal</h2>
-          <div style={{ color: '#a1a2ab' }}>
+          <Image src={LogoImage} />
+          <div className="footerCompanyDescription">
             Great lesson ideas and lesson plans for ESL teachers! Educators can
             customize lesson plans to best.
           </div>
@@ -52,74 +35,73 @@ const Footer = () => (
           </div>
         </div>
 
-        <div style={{ maxWidth: '18.18%' }}>
-          <h2>Company</h2>
-          <List link>
-            <List.Item as="ul">
+        <div className="footerNavLinkColumn">
+          <p className="footerMainHeading">Company</p>
+          <List link as="ul">
+            <List.Item as="li">
               <a href="/">About</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Courses</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Events</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Instructor</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Career</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Become a Teacher</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Contact</a>
             </List.Item>
           </List>
         </div>
-        <div style={{ maxWidth: '18.18%' }}>
-          <h2>Platform</h2>
-          <List link>
-            <List.Item as="ul">
+
+        <div className="footerNavLinkColumn">
+          <p className="footerMainHeading">Platform</p>
+          <List link as="ul">
+            <List.Item as="li">
               <a href="/">Browse Library</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Library</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Partners</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">News & Blogs</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">FAQs</a>
             </List.Item>
-            <List.Item as="ul">
+            <List.Item as="li">
               <a href="/">Tutorials</a>
             </List.Item>
           </List>
         </div>
+
         <div style={{ maxWidth: '36.36%' }}>
-          <h2>Subscribe</h2>
+          <p className="footerMainHeading">Subscribe</p>
           <Input
+            type="email"
             action={{ icon: 'arrow right' }}
             placeholder="Your email address"
           />
-          <div style={{ color: '#a1a2ab', marginTop: '15px' }}>
+          <p className="footerSmallText">
             Get the latest news and updates right at your inbox.
-          </div>
+          </p>
         </div>
       </div>
-      <div
-        style={{
-          padding: '15px 0px',
-          borderTop: '1px solid #1c1f3f',
-          color: '#a1a2ab',
-        }}
-      >
-        © 2022 Educal, All Rights Reserved. Design By <a href="/">Theme Pure</a>
+
+      <div className="footerAttribution">
+        © 2022 Educal, All Rights Reserved. Design By{' '}
+        <span style={{ color: '#fff' }}>Theme Pure</span>
       </div>
     </div>
   </footer>
