@@ -1,0 +1,49 @@
+.headerSearchRoot {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  line-height: 20px;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  padding: 5px 10px 5px 15px;
+  border: 1px solid black;
+}
+
+.headerSearchRoot:focus-within {
+  border: 1px solid #007aff;
+}
+
+.headerSearchIconDiv {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+}
+
+.headerSearchWidget {
+  flex: 1 1 auto;
+  min-width: 100px;
+  padding: 0px 10px 0px 15px;
+}
+
+.headerSearchSeparator {
+  flex: 0 0 auto;
+  width: 2px;
+  height: 30px;
+  background: #dbdfe9;
+  margin: 0px 10px;
+}
+
+.headerSearchCartDiv {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+}
+
+.field.headerSearchRoot > .ui.transparent.input.headerSearchWidget > input {
+  height: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0e1133;
+}

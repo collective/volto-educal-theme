@@ -1,0 +1,42 @@
+/*******************************
+            Input
+*******************************/
+
+/*-------------------
+      Element
+--------------------*/
+
+// Pastanaga variable
+@inputFontWeight: 300;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Icon Input */
+
+/* Circular Icon Input */
+
+/* Labeled Input */
+
+/*-------------------
+        States
+--------------------*/
+
+/* Placeholder */
+@placeholderColor: #0e1133;
+@placeholderFocusColor: #0e1133;
+
+/* Down */
+
+/* Focus */
+
+/* Error */
+
+/* Loader */
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Inverted */

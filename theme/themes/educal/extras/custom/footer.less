@@ -1,0 +1,100 @@
+/* Footer.jsx */
+
+.footerRoot {
+  background: #0e1133;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.footerMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 0px 40px 0px;
+  text-align: left;
+  /* Media Queries */
+  max-width: 1200px;
+}
+
+.footerNavLinkColumn {
+  max-width: 18.18%;
+  margin-bottom: 50px;
+}
+
+.footerMainHeading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 5px;
+  margin-bottom: 22px;
+}
+
+.footerCompanyDescription {
+  font-size: 16px;
+  line-height: 24px;
+  color: #a1a2ab;
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+
+.footerSmallText {
+  font-size: 14px;
+  line-height: 20px;
+  color: #83848a;
+  padding-right: 60px;
+  margin-top: 15px;
+}
+
+.footerAttribution {
+  width: 100%;
+  padding: 20px 0px;
+  border-top: 1px solid #1c1f3f;
+  font-size: 14px;
+  text-align: center;
+  color: #83848a;
+}
+
+ul.ui.list,
+.ui.bulleted.list {
+  margin-left: 0px;
+}
+
+// for navigation link
+.ui.link.list[role='list'] > li {
+  line-height: inherit;
+}
+
+.ui.link.list[role='list'] > li > a {
+  color: #a1a2ab;
+  margin-bottom: 4px;
+}
+
+// for subscribe input
+.ui.action.input > input {
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  padding-right: 30px;
+  padding-right: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  color: #0e1133;
+}
+
+.ui.action.input > button.ui.icon.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  background: #2b4eff;
+  width: 70px;
+  height: 60px;
+  overflow: hidden;
+}
