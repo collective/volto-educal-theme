@@ -1,11 +1,33 @@
 import React from 'react';
 import { Button, Input, Image, List } from 'semantic-ui-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faFacebookF,
+  faPinterestP,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import LogoImage from '../../../../../theme/themes/educal/assets/images/logo/logo-2.png';
+import OrangeCircleImage from '../../../../../theme/themes/educal/assets/images/cta/cta-shape.png';
 
 // Let's avoid responsiveness for now
 // xxl ration 3:2:2:4
 const Footer = () => (
   <footer>
+    <div className="footerSuperRoot">
+      <div className="preFooter">
+        <div className="preFooterBg">
+          <Image src={OrangeCircleImage} />
+        </div>
+        <div className="preFooterInner">
+          <div className="preFooterHeader">
+            You can be your own Guiding star with our help
+          </div>
+          <div className="preFooterRight">
+            <Button content="Get started" className="preFooterButton" />
+          </div>
+        </div>
+      </div>
+    </div>
     <div className="footerRoot">
       <div className="footerMain">
         <div style={{ maxWidth: '27.28%' }}>
@@ -15,23 +37,15 @@ const Footer = () => (
             customize lesson plans to best.
           </div>
           <div style={{ marginTop: '15px' }}>
-            {/* semantic UI elements/buttons */}
-            <Button
-              color="facebook"
-              icon="facebook"
-              style={{ marginRight: '7.5px' }}
-            />
-            <Button
-              color="twitter"
-              icon="twitter"
-              style={{ marginRight: '7.5px' }}
-            />
-            <Button
-              // No color for pinterest
-              color="youtube"
-              icon="pinterest p"
-              style={{ marginRight: '7.5px' }}
-            />
+            <button className="footerSocialButton">
+              <FontAwesomeIcon icon={faFacebookF} />
+            </button>
+            <button className="footerSocialButton footerTwitterButton">
+              <FontAwesomeIcon icon={faTwitter} />
+            </button>
+            <button className="footerSocialButton footerPinterestButton">
+              <FontAwesomeIcon icon={faPinterestP} />
+            </button>
           </div>
         </div>
 
