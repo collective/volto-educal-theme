@@ -6,8 +6,8 @@ import {
   faPinterestP,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import LogoImage from '../../../../../theme/themes/educal/assets/images/logo/logo-2.png';
-import OrangeCircleImage from '../../../../../theme/themes/educal/assets/images/cta/cta-shape.png';
+import LogoImage from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/images/logo/logo-2.png';
+import OrangeCircleImage from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/images/cta/cta-shape.png';
 
 // Let's avoid responsiveness for now
 // xxl ration 3:2:2:4
@@ -30,13 +30,13 @@ const Footer = () => (
     </div>
     <div className="footerRoot">
       <div className="footerMain">
-        <div style={{ maxWidth: '27.28%' }}>
+        <div className="footerMainLeftSide">
           <Image src={LogoImage} />
           <div className="footerCompanyDescription">
             Great lesson ideas and lesson plans for ESL teachers! Educators can
             customize lesson plans to best.
           </div>
-          <div style={{ marginTop: '15px' }}>
+          <div className="footerSocialButtonDiv">
             <button className="footerSocialButton">
               <FontAwesomeIcon icon={faFacebookF} />
             </button>
@@ -100,7 +100,7 @@ const Footer = () => (
           </List>
         </div>
 
-        <div style={{ maxWidth: '36.36%' }}>
+        <div className="footerMainRightSide">
           <p className="footerMainHeading">Subscribe</p>
           <Input
             type="email"
@@ -115,7 +115,7 @@ const Footer = () => (
 
       <div className="footerAttribution">
         © 2022 Educal, All Rights Reserved. Design By{' '}
-        <span style={{ color: '#fff' }}>Theme Pure</span>
+        <span className="footerAttribution">Theme Pure</span>
       </div>
     </div>
   </footer>

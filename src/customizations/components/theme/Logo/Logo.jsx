@@ -8,7 +8,7 @@ import { Image } from 'semantic-ui-react';
 import { useSelector } from 'react-redux';
 import config from '@plone/volto/registry';
 import { UniversalLink } from '@plone/volto/components';
-import LogoImage from '../../../../../theme/themes/educal/assets/images/logo/logo.png';
+import LogoImage from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/images/logo/logo.png';
 
 const messages = defineMessages({
   site: {

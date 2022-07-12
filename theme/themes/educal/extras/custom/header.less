@@ -1,4 +1,33 @@
 /* Header.jsx */
+
+.headerRoot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* HEADER LEFT */
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.headerLeftSeparator {
+  width: 1px;
+  height: 40px;
+  background-color: #c9ccd4;
+  margin-left: 30px;
+}
+
+.headerCategoryContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
 .categoryPlaceholder {
   font-size: 16px;
   font-weight: 500;
@@ -11,4 +40,34 @@
   display: inline-block;
   width: 16px;
   height: 16px;
+}
+
+/* HEADER RIGHT */
+
+.headerRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 75%;
+}
+
+.headerSearch {
+  margin-left: 50px;
+}
+
+.headerButton {
+  margin-left: 20px;
+}
+
+// Hiding breadcrumbs from the App first level component
+.siteroot .ui.secondary.segment.breadcrumbs,
+.section-edit .ui.secondary.segment.breadcrumbs {
+  display: none;
+}
+
+// Hiding Page Heading
+.ui.container > .documentFirstHeading,
+.ui.container > .documentDescription {
+  display: none;
 }
