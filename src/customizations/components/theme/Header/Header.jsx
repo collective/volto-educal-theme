@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import { Button, Container, Dropdown, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { getVocabulary } from '@plone/volto/actions';
 import { Icon } from '@plone/volto/components';
 import HamburgerIcon from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/icons/Hamburger.svg';
 
@@ -17,6 +18,8 @@ import {
   Navigation,
   SearchWidget,
 } from '@plone/volto/components';
+
+const vocabulary = 'plone.app.vocabularies.Keywords';
 
 /**
  * Header component class.
@@ -30,8 +33,10 @@ class Header extends Component {
    * @static
    */
   static propTypes = {
-    token: PropTypes.string,
+    getVocabulary: PropTypes.func.isRequired,
     pathname: PropTypes.string.isRequired,
+    token: PropTypes.string,
+    vocabularyItems: PropTypes.array.isRequired,
   };
 
   /**
@@ -42,6 +47,10 @@ class Header extends Component {
   static defaultProps = {
     token: null,
   };
+
+  componentDidMount() {
+    this.props.getVocabulary({ vocabNameOrURL: vocabulary });
+  }
 
   /**
    * Render method.
@@ -58,23 +67,30 @@ class Header extends Component {
                 <Logo />
               </div>
               <div className="headerLeftSeparator"></div>
-
-              <div className="headerCategoryContainer">
-                <div className="categoryIcon">
-                  <Icon name={HamburgerIcon} size="16px" />
+              {this.props.vocabularyItems.length > 0 ? (
+                <div className="headerCategoryContainer">
+                  <div className="categoryIcon">
+                    <Icon name={HamburgerIcon} size="16px" />
+                  </div>
+                  <div className="categoryPlaceholder">
+                    <Dropdown text="Category" simple>
+                      <Dropdown.Menu>
+                        {this.props.vocabularyItems.map((item) => {
+                          const label = item.label ? item.label : item.value;
+                          return (
+                            <Dropdown.Item
+                              key={label}
+                              text={label}
+                              as="a"
+                              href={`/search?Subject=${label}`}
+                            />
+                          );
+                        })}
+                      </Dropdown.Menu>
+                    </Dropdown>
+                  </div>
                 </div>
-                <div className="categoryPlaceholder">
-                  <Dropdown text="Category" simple>
-                    <Dropdown.Menu>
-                      <Dropdown.Item text="English Learning" />
-                      <Dropdown.Item text="Web Development" />
-                      <Dropdown.Item text="Logo Design" />
-                      <Dropdown.Item text="Motion Graphics" />
-                      <Dropdown.Item text="Video Editing" />
-                    </Dropdown.Menu>
-                  </Dropdown>
-                </div>
-              </div>
+              ) : null}
             </div>
             <div className="headerRight">
               <div id="headerMenu">
@@ -88,13 +104,20 @@ class Header extends Component {
               </div>
             </div>
           </div>
-          {/* <Anontools /> */}
+          <Anontools />
         </Container>
       </Segment>
     );
   }
 }
 
-export default connect((state) => ({
-  token: state.userSession.token,
-}))(Header);
+export default connect(
+  (state) => ({
+    token: state.userSession.token,
+    vocabularyItems:
+      state.vocabularies[vocabulary] && state.vocabularies[vocabulary].items
+        ? state.vocabularies[vocabulary].items
+        : [],
+  }),
+  { getVocabulary },
+)(Header);
