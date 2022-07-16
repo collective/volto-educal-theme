@@ -16,6 +16,8 @@ import config from '@plone/volto/registry';
 import { getNavigation } from '@plone/volto/actions';
 import { CSSTransition } from 'react-transition-group';
 import NavItems from '@plone/volto/components/theme/Navigation/NavItems';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const messages = defineMessages({
   closeMobileMenu: {
@@ -159,10 +161,8 @@ class Navigation extends Component {
         </div>
         <Menu
           stackable
-          // pointing
           secondary
           className="computer large screen widescreen only"
-          // onClick={this.closeMobileMenu}
         >
           {this.props.items.map((item) => (
             <div className="customNavItems" key={item.url}>
@@ -170,7 +170,7 @@ class Navigation extends Component {
                 <Dropdown
                   text={item.title}
                   simple
-                  icon="dropdown"
+                  icon={<FontAwesomeIcon icon={faAngleDown} size="xs" />}
                   onClick={() => {
                     this.props.history.push(`/${item.title.toLowerCase()}`);
                   }}
