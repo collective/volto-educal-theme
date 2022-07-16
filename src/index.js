@@ -1,6 +1,7 @@
 const applyConfig = (config) => {
+  // For multilevel navigation
   config.settings.navDepth = 3;
-  // console.log(config);
+
   return config;
 };
 
