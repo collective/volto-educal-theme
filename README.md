@@ -2,6 +2,12 @@
 
 A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-docs.plone.org/volto/addons/index.html) based on [educal theme](https://themeforest.net/item/educal-online-learning-and-education-vue-js-template/37099827).
 
+## Features
+
+1. Support for nested navigation links.
+1. Categorization of pages based on tags using the _categorization menu_ in the left hand side of the header.
+1. Customizable pre-footer, as another add-on [volto-block-banner](https://github.com/collective/volto-block-banner).
+
 ## Installation
 
 1. Bootstrap a new volto project.
@@ -14,3 +20,7 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 + import '@plone-collective/volto-educal-theme/semantic.less';
   import '@plone/volto/../theme/themes/pastanaga/extras/extras.less';
 ```
+
+## Preview
+
+![image](/assets/github/preview.png)
