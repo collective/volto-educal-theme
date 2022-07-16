@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { compose } from 'redux';
 import { defineMessages, injectIntl } from 'react-intl';
 import { Dropdown, Menu } from 'semantic-ui-react';
@@ -167,7 +167,14 @@ class Navigation extends Component {
           {this.props.items.map((item) => (
             <div className="customNavItems" key={item.url}>
               {item.items && item.items.length ? (
-                <Dropdown text={item.title} simple icon="dropdown">
+                <Dropdown
+                  text={item.title}
+                  simple
+                  icon="dropdown"
+                  onClick={() => {
+                    this.props.history.push(`/${item.title.toLowerCase()}`);
+                  }}
+                >
                   <Dropdown.Menu>
                     {item.items.map((subitem) => (
                       <Dropdown.Item id={subitem.title} key={subitem.url}>
@@ -208,6 +215,7 @@ class Navigation extends Component {
 
 export default compose(
   injectIntl,
+  withRouter,
   connect(
     (state) => ({
       token: state.userSession.token,
