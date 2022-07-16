@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Input, Image, List } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
+import { Input, Image, List } from 'semantic-ui-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
@@ -7,27 +8,11 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import LogoImage from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/images/logo/logo-2.png';
-import OrangeCircleImage from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/images/cta/cta-shape.png';
 
 // Let's avoid responsiveness for now
 // xxl ration 3:2:2:4
 const Footer = () => (
-  <footer>
-    <div className="footerSuperRoot">
-      <div className="preFooter">
-        <div className="preFooterBg">
-          <Image src={OrangeCircleImage} />
-        </div>
-        <div className="preFooterInner">
-          <div className="preFooterHeader">
-            You can be your own Guiding star with our help
-          </div>
-          <div className="preFooterRight">
-            <Button content="Get started" className="preFooterButton" />
-          </div>
-        </div>
-      </div>
-    </div>
+  <footer className="footerSuperRoot">
     <div className="footerRoot">
       <div className="footerMain">
         <div className="footerMainLeftSide">
@@ -37,15 +22,33 @@ const Footer = () => (
             customize lesson plans to best.
           </div>
           <div className="footerSocialButtonDiv">
-            <button className="footerSocialButton">
+            <Link
+              className="footerSocialButton"
+              to={{
+                pathname: '//www.facebook.com/',
+              }}
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
-            </button>
-            <button className="footerSocialButton footerTwitterButton">
+            </Link>
+            <Link
+              className="footerSocialButton footerTwitterButton"
+              to={{
+                pathname: '//www.twitter.com/',
+              }}
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faTwitter} />
-            </button>
-            <button className="footerSocialButton footerPinterestButton">
+            </Link>
+            <Link
+              className="footerSocialButton footerPinterestButton"
+              to={{
+                pathname: '//www.pinterest.com/',
+              }}
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faPinterestP} />
-            </button>
+            </Link>
           </div>
         </div>
 
