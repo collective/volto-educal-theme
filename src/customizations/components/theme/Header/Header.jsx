@@ -12,7 +12,7 @@ import { Icon } from '@plone/volto/components';
 import HamburgerIcon from '@plone-collective/volto-educal-theme/../theme/themes/educal/assets/icons/Hamburger.svg';
 
 import {
-  Anontools,
+  // Anontools,
   // LanguageSelector,
   Logo,
   Navigation,
@@ -100,11 +100,13 @@ class Header extends Component {
                 <SearchWidget />
               </div>
               <div className="headerButton">
-                <Button primary>Try for free</Button>
+                <Button primary as="a" href="/login">
+                  Try for free
+                </Button>
               </div>
             </div>
           </div>
-          <Anontools />
+          {/* <Anontools /> */}
         </Container>
       </Segment>
     );
