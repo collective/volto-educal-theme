@@ -6,7 +6,8 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 
 1. Support for nested navigation links.
 1. Categorization of pages based on tags using the _categorization menu_ in the left hand side of the header.
-1. Customizable pre-footer as an add-on [volto-block-banner](https://github.com/collective/volto-block-banner).
+1. Customizable pre-footer block as an add-on [volto-block-banner](https://github.com/collective/volto-block-banner).
+1. Customizable hero block as an add-on [volto-educal-hero-block](https://github.com/collective/volto-educal-hero-block).
 
 ## Installation
 
