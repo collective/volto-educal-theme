@@ -10,6 +10,12 @@
     "plone",
     "react"
   ],
+  "addons": [
+    "@kitconcept/volto-blocks-grid",
+    "@plone-collective/volto-block-banner",
+    "@plone-collective/volto-educal-hero-block",
+    "volto-slate:asDefault"
+  ],
   "scripts": {
     "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon"
   },
@@ -19,6 +25,8 @@
     "@fortawesome/free-regular-svg-icons": "6.1.1",
     "@fortawesome/free-solid-svg-icons": "6.1.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "@plone/scripts": "*"
+    "@kitconcept/volto-blocks-grid": "*",
+    "@plone/scripts": "*",
+    "volto-slate": "*"
   }
 }
