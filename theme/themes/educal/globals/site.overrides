@@ -20,3 +20,8 @@ body {
   color: #6d6e75;
   line-height: 26px;
 }
+
+// * volto-block-banner fix
+main {
+  overflow: visible !important;
+}
