@@ -89,6 +89,14 @@ const applyConfig = (config) => {
       cssClass: 'educalRightLink',
       label: 'Educal Right Text',
     },
+    {
+      cssClass: 'educalSectionHeadingCenter',
+      label: 'Educal Section Heading Center',
+    },
+    {
+      cssClass: 'educalSectionSubHeading',
+      label: 'Educal SubHeading',
+    },
   ];
   // Add event listing
   config.blocks.blocksConfig.listing.variations = [
