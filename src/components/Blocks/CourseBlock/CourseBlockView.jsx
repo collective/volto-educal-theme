@@ -10,7 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import '@plone-collective/volto-educal-theme/components/Blocks/CourseBlock/courseBlock.less';
 
-const CourseBlock = ({ data, mode }) => {
+const CourseBlockView = ({ data }) => {
   const {
     courseImage,
     tag1,
@@ -89,4 +89,4 @@ const CourseBlock = ({ data, mode }) => {
   );
 };
 
-export default CourseBlock;
+export default CourseBlockView;

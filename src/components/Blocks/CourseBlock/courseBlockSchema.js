@@ -1,5 +1,5 @@
 export default () => ({
-  title: 'Educal Banner Area Block',
+  title: 'Educal Course Block',
   fieldsets: [
     {
       id: 'default',
@@ -23,36 +23,35 @@ export default () => ({
   properties: {
     courseImage: {
       title: 'Course Image',
-      widget: 'url',
+      widget: 'attachedimage',
     },
     tag1: {
       title: 'Tag 1',
-      widget: 'string',
+      type: 'string',
     },
     tag2: {
       title: 'Tag 2',
-      widget: 'string',
+      type: 'string',
     },
     noOfLessons: {
       title: 'Total lessons',
-      widget: 'string',
+      type: 'string',
     },
     avgRating: {
       title: 'Average Rating',
-      widget: 'string',
+      type: 'string',
     },
     noOfReviews: {
       title: 'Number of reviews',
-      widget: 'string',
+      type: 'string',
     },
     courseName: {
       title: 'Course Name',
       type: 'string',
-      defaultValue: 'Put the name of course here!',
     },
     authorDisplayPic: {
       title: 'Author Image',
-      widget: 'url',
+      widget: 'attachedimage',
     },
     authorName: {
       title: 'Author Name',
@@ -60,15 +59,15 @@ export default () => ({
     },
     price: {
       title: 'Price',
-      widget: 'string',
+      type: 'string',
     },
     discountedPrice: {
       title: 'Discounted Price',
-      widget: 'string',
+      type: 'string',
     },
     courseUrl: {
       title: 'Course URL',
-      widget: 'string',
+      type: 'string',
     },
   },
   required: [],

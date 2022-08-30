@@ -2,7 +2,7 @@ import React from 'react';
 import CourseBlockView from '@plone-collective/volto-educal-theme/components/Blocks/CourseBlock/CourseBlockView';
 import CourseBlockSidebar from '@plone-collective/volto-educal-theme/components/Blocks/CourseBlock/CourseBlockSidebar';
 
-const BannerAreaBlockEdit = (props) => {
+const CourseBlockEdit = (props) => {
   return (
     <>
       <CourseBlockView {...props} mode="edit" />
@@ -11,4 +11,4 @@ const BannerAreaBlockEdit = (props) => {
   );
 };
 
-export default BannerAreaBlockEdit;
+export default CourseBlockEdit;
