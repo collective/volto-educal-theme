@@ -19,17 +19,15 @@ export default () => ({
   properties: {
     tag: {
       title: 'tag',
-      widget: 'string',
+      type: 'string',
     },
     headingLine1: {
       title: 'Heading1',
       type: 'string',
-      defaultValue: 'Put the heading line 1 here!',
     },
     headingLine2: {
       title: 'Heading2',
       type: 'string',
-      defaultValue: 'Put the heading line 2 here!',
     },
     showActionButton: {
       title: 'Enable button',
@@ -45,11 +43,11 @@ export default () => ({
     },
     foregroundImage: {
       title: 'Foreground Image',
-      widget: 'url',
+      widget: 'attachedimage',
     },
     backgroundImage: {
       title: 'Background Image',
-      widget: 'url',
+      widget: 'attachedimage',
     },
   },
   required: [],
