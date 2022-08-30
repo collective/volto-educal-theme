@@ -10,21 +10,19 @@ export default () => ({
   properties: {
     teaserIcon: {
       title: 'teaserIcon',
-      widget: 'url',
+      widget: 'attachedimage',
     },
     title: {
       title: 'Heading',
       type: 'string',
-      defaultValue: 'Put the title here!',
     },
     description: {
       title: 'Description',
       type: 'string',
-      defaultValue: 'Put the description here!',
     },
     url: {
       title: 'On Click URL',
-      type: 'url',
+      type: 'string',
     },
   },
   required: [],
