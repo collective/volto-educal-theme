@@ -1,6 +1,6 @@
-# Educal Course Block
+# Educal Banner Area Block
 
-A volto block for educal course block.
+A volto block for banner area in educal theme.
 
 ## Customizable properties
 

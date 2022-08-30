@@ -1,4 +1,4 @@
-# Educal Course Block
+# Educal Category Block
 
 A volto teaser block for category section.
 
