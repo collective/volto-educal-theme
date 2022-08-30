@@ -43,4 +43,4 @@ tag: 'Best Value'
 
 ### Output
 
-![image](/assets/github/price_preview.png)
+<img src="/assets/github/price_preview.png" width="50%">
