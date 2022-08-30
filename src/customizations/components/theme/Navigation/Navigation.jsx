@@ -171,8 +171,13 @@ class Navigation extends Component {
                   text={item.title}
                   simple
                   icon={<FontAwesomeIcon icon={faAngleDown} size="xs" />}
-                  onClick={() => {
-                    this.props.history.push(`/${item.title.toLowerCase()}`);
+                  onClick={(event) => {
+                    if (
+                      event.target.textContent &&
+                      event.target.textContent === item.title
+                    ) {
+                      this.props.history.push(item.url);
+                    }
                   }}
                 >
                   <Dropdown.Menu>
