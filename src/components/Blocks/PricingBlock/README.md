@@ -7,18 +7,18 @@ A volto block for educal price block.
 <details>
   <summary>Click to expand!</summary>
 
-1. `title` (**string**): Title of the price plan.
-1. `description` (**string**): Description for the price plan.
-1. `price1` (**string**): Price to be shown in heading.
-1. `price2` (**string**): Price data to be shown in normal text.
-1. `point1` (**string**): Services offered in the plan.
-1. `point2` (**string**): Services offered in the plan.
-1. `point3` (**string**): Services offered in the plan.
-1. `point4` (**string**): Services offered in the plan.
-1. `showActionButton` (**boolean**): Toggle the button.
-1. `actionButtonText` (**string**): Button label.
-1. `actionButtonUrl` (**string**): URL which is navigated onClick of button.
-1. `tag` (**string**): Tag for the price block.
+1. `title` (_string_): Title of the price plan.
+1. `description` (_string_): Description for the price plan.
+1. `price1` (_string_): Price to be shown in heading.
+1. `price2` (_string_): Price data to be shown in normal text.
+1. `point1` (_string_): Services offered in the plan.
+1. `point2` (_string_): Services offered in the plan.
+1. `point3` (_string_): Services offered in the plan.
+1. `point4` (_string_): Services offered in the plan.
+1. `showActionButton` (_boolean_): Toggle the button.
+1. `actionButtonText` (_string_): Button label.
+1. `actionButtonUrl` (_string_): URL which is navigated onClick of button.
+1. `tag` (_string_): Tag for the price block.
 
 </details>
 
