@@ -10,6 +10,10 @@ import {
   CourseBlockEdit,
   CourseBlockView,
 } from '@plone-collective/volto-educal-theme/components/Blocks/CourseBlock';
+import {
+  PricingBlockEdit,
+  PricingBlockView,
+} from '@plone-collective/volto-educal-theme/components/Blocks/PricingBlock';
 import EducalEventListing from '@plone-collective/volto-educal-theme/components/Blocks/Listing/EducalEventListing';
 
 import categoryTeaserIcon from '@plone/volto/icons/freedom.svg';
@@ -70,6 +74,22 @@ const applyConfig = (config) => {
       view: [],
     },
   };
+  config.blocks.blocksConfig.educalPricingBlock = {
+    id: 'educalPricingBlock',
+    title: 'Educal Pricing Block',
+    icon: courseBlockIcon,
+    group: 'common',
+    view: PricingBlockView,
+    edit: PricingBlockEdit,
+    restricted: false,
+    mostUsed: false,
+    sidebarTab: 1,
+    enableStyling: true,
+    security: {
+      addPermission: [],
+      view: [],
+    },
+  };
   // Adding teaserBlocks to Grid
   config.blocks.blocksConfig.__grid.gridAllowedBlocks = [
     ...config.blocks.blocksConfig.__grid.gridAllowedBlocks,
@@ -77,6 +97,7 @@ const applyConfig = (config) => {
     'educalBannerAreaBlock',
     'educalCategoryTeaser',
     'educalCourseBlock',
+    'educalPricingBlock',
   ];
   // Slate Config
   config.settings.slate.styleMenu.inlineStyles = [
