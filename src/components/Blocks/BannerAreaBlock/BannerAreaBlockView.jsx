@@ -4,7 +4,7 @@ import { Button, Image } from 'semantic-ui-react';
 
 import '@plone-collective/volto-educal-theme/components/Blocks/BannerAreaBlock/bannerAreaBlock.less';
 
-const BannerAreaBlockView = ({ data, mode }) => {
+const BannerAreaBlockView = ({ data }) => {
   const {
     tag,
     headingLine1,
