@@ -55,6 +55,11 @@ const Footer = () => (
         <div className="footerNavLinkColumn">
           <p className="footerMainHeading">Company</p>
           <List link as="ul">
+            {/* You can uncomment the code to add login link. */}
+            {/* <List.Item as="li">
+              <a href="/login">Login</a>
+            </List.Item> */}
+            {/* Customize the links as per your need. */}
             <List.Item as="li">
               <a href="/">About</a>
             </List.Item>

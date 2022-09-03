@@ -100,7 +100,12 @@ class Header extends Component {
                 <SearchWidget />
               </div>
               <div className="headerButton">
-                <Button primary as="a" href="/login">
+                <Button
+                  primary
+                  as="a"
+                  // Add 'href' as per your requirements
+                  // href="/login"
+                >
                   Try for free
                 </Button>
               </div>
