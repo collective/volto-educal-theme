@@ -8,6 +8,7 @@ import {
   faBook,
   faArrowRight,
 } from '@fortawesome/free-solid-svg-icons';
+import CourseBlockTag from '@plone-collective/volto-educal-theme/components/Blocks/CourseBlock/CourseBlockTag';
 import '@plone-collective/volto-educal-theme/components/Blocks/CourseBlock/courseBlock.less';
 
 const CourseBlockView = ({ data }) => {
@@ -42,8 +43,8 @@ const CourseBlockView = ({ data }) => {
       <div className="courseBlockTop">
         <Image src={urlHandler(courseImage)} className="courseBlockImage" />
         <div className="courseTagDiv">
-          <div className="courseBlockTag courseBlockTag1">{tag1}</div>{' '}
-          <div className="courseBlockTag courseBlockTag2">{tag2}</div>
+          <CourseBlockTag tag={tag1} />
+          <CourseBlockTag tag={tag2} secondary />
         </div>
       </div>
       <div className="courseBlockMiddle">
