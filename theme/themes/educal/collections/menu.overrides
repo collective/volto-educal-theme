@@ -193,3 +193,8 @@
     color: @textColor;
   }
 }
+
+/* For header menu alignment*/
+.ui.menu {
+  margin: 0;
+}
