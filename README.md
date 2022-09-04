@@ -29,7 +29,9 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 
 ## Features requiring Customization 🔧
 
-1. Categorization of pages based on tags using the _categorization menu_ present in the left side of the header. **NOTE:** This feature requires the following API call `/++api++/@vocabularies/plone.app.vocabularies.Keywords?b_start=0` which is by default only available to logged in users.
+1. Categorization of pages based on tags using the _categorization menu_ present in the left side of the header.
+
+**_NOTE:_** This feature requires the API call to Keywords [vocabulary](https://plonerestapi.readthedocs.io/en/latest/vocabularies.html) `/++api++/@vocabularies/plone.app.vocabularies.Keywords?b_start=0` which is by default only available to authenticated users. 
    ![](/assets/github/category_menu_preview.gif)
 1. Footer section links including social handles are available but requires additional customization. Change the code in [Footer.jsx](src/customizations/components/theme/Footer/Footer.jsx) as per the requirements.
    ![](/assets/github/footer_preview.png)
