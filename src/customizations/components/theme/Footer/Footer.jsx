@@ -121,10 +121,7 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="footerAttribution">
-        © 2022 Educal, All Rights Reserved. Design By{' '}
-        <span className="footerAttribution">Theme Pure</span>
-      </div>
+      <div className="footerAttribution">Powered by Plone CMS and Volto!</div>
     </div>
   </footer>
 );
