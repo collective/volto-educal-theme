@@ -29,7 +29,7 @@ A volto block for educal price block.
 ```txt
 title: 'Diamond'
 description: 'Perfect for enterprise marketing teams'
-price1: ' $99'
+price1: '$99'
 price2: '.99 / annually'
 point1: 'Course Discussions'
 point2: 'Content Library'
