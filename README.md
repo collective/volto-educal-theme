@@ -48,31 +48,55 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 ## Installation 🚀
 
 1. [Create a new volto project](https://github.com/plone/volto#create-a-volto-project-using-the-generator), if you don't have one.
-1. Clone this repository i.e. `volto-educal-theme`, the [volto-educal-hero-block](https://github.com/collective/volto-educal-hero-block) and the [volto-block-banner](https://github.com/collective/volto-block-banner) in the `src/addons` directory of the volto project.
-1. Now link the add-ons (cloned repositories) in the volto project:
+1. Add the following packages to the `mrs.developer.json` file of your volto project.
 
-   1. Make sure the `private` field is set to `true` as [Workspaces can only be enabled in private projects](https://classic.yarnpkg.com/lang/en/docs/workspaces/#toc-how-to-use-it).
+   ```json
+   {
+     "volto-educal-hero-block": {
+       "url": "git@github.com:collective/volto-educal-hero-block.git",
+       "https": "https://github.com/collective/volto-educal-hero-block.git",
+       "package": "@plone-collective/volto-educal-hero-block",
+       "branch": "main",
+       "path": "src"
+     },
+     "volto-block-banner": {
+       "url": "git@github.com:collective/volto-block-banner.git",
+       "https": "https://github.com/collective/volto-block-banner.git",
+       "package": "@plone-collective/volto-block-banner",
+       "branch": "main",
+       "path": "src"
+     },
+     "volto-educal-theme": {
+       "url": "git@github.com:collective/volto-educal-theme.git",
+       "https": "https://github.com/collective/volto-educal-theme.git",
+       "package": "@plone-collective/volto-educal-theme",
+       "branch": "main",
+       "path": "src"
+     }
+   }
+   ```
+
+1. Now link the add-on in the volto project:
+
+   1. Make sure the `private` field is set to `true` in the volto project's `package.json`. As [yarn workspaces can only be enabled in private projects](https://classic.yarnpkg.com/lang/en/docs/workspaces/#toc-how-to-use-it).
+
+   1. Add `src/addons/*` as array members under the `workspaces` property in the volto project's `package.json`.
 
    1. Add `@plone-collective/volto-educal-theme` as an array member under the `addons` property in the volto project's `package.json`.
 
-   1. Add `src/addons/volto-educal-theme`, `src/addons/volto-block-banner` and `src/addons/volto-educal-hero-block` as array members under the `workspaces` property in the volto project's `package.json`.
-
-   1. Finally, the volto project's `package.json` should include the following lines:
+   Finally, the volto project's `package.json` should include the following lines:
 
    ```json
+   {
      "private": true,
-     "workspaces": [
-       "src/addons/volto-educal-theme",
-       "src/addons/volto-block-banner",
-       "src/addons/volto-educal-hero-block"
-     ],
+     "workspaces": ["src/addons/*"],
      "addons": ["@plone-collective/volto-educal-theme"]
+   }
    ```
 
    **REMEMBER:**
 
    - You just need to add this in your volto project's `package.json` file and not in any of the add-ons `package.json` file.
-   - If you are stuck, you can refer the change [here](https://github.com/avimishra18/volto_educal/blob/48328f5551678f26cae02f1bdc6268b2de47ad26/package.json#L40-L47).
    - For a more detailed guide, on how to install an add-on in volto [visit here](https://6.dev-docs.plone.org/volto/addons/index.html#loading-addon-configuration).
 
 1. Change this line in `src/theme.js` of the volto project.
@@ -86,6 +110,7 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
    You can refer the change [here](https://github.com/avimishra18/volto_educal/blob/main/src/theme.js).
 
 1. [Bootstrap](https://github.com/plone/volto#bootstrap-the-plone-api-backend) the Plone API backend. Alternatively, you can visit the [official documentation](https://docs.plone.org/manage/installing/index.html) for other installation options.
+1. Run `yarn` to install the node modules. 📦
 1. Run `yarn start` command to start the volto server! 🍻
 
 ## Screenshot 📸
