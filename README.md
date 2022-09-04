@@ -6,8 +6,7 @@
 
 A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-docs.plone.org/volto/addons/index.html) based on [educal theme](https://themeforest.net/item/educal-online-learning-and-education-vue-js-template/37099827).
 
-![](/assets/github/preview_1.gif)
-![](/assets/github/preview_2.gif)
+![](/assets/github/preview.gif)
 
 ## Features ✨
 
@@ -47,7 +46,7 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 ## Installation 🚀
 
 1. [Create a new volto project](https://github.com/plone/volto#create-a-volto-project-using-the-generator), if you don't have one.
-1. Clone this repository i.e. `volto-educal-theme`, the [Hero Block](https://github.com/collective/volto-educal-hero-block) and the [Pre-footer block](https://github.com/collective/volto-block-banner) in the `src/addons` directory of the volto project.
+1. Clone this repository i.e. `volto-educal-theme`, the [volto-educal-hero-block](https://github.com/collective/volto-educal-hero-block) and the [volto-block-banner](https://github.com/collective/volto-block-banner) in the `src/addons` directory of the volto project.
 1. Now we will be linking the cloned repositories:
 
    1. Add `@plone-collective/volto-educal-theme` as an array member under the `addons` property in the volto project's `package.json`.
