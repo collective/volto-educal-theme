@@ -47,7 +47,9 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 
 1. [Create a new volto project](https://github.com/plone/volto#create-a-volto-project-using-the-generator), if you don't have one.
 1. Clone this repository i.e. `volto-educal-theme`, the [volto-educal-hero-block](https://github.com/collective/volto-educal-hero-block) and the [volto-block-banner](https://github.com/collective/volto-block-banner) in the `src/addons` directory of the volto project.
-1. Now we will be linking the cloned repositories:
+1. Now link the add-ons (cloned repositories) in the volto project:
+
+   1. Make sure the `private` field is set to `true` as [Workspaces can only be enabled in private projects](https://classic.yarnpkg.com/lang/en/docs/workspaces/#toc-how-to-use-it).
 
    1. Add `@plone-collective/volto-educal-theme` as an array member under the `addons` property in the volto project's `package.json`.
 
@@ -56,6 +58,7 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
    1. Finally, the volto project's `package.json` should include the following lines:
 
    ```json
+     "private": true,
      "workspaces": [
        "src/addons/volto-educal-theme",
        "src/addons/volto-block-banner",
@@ -67,10 +70,10 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
    **REMEMBER:**
 
    - You just need to add this in your volto project's `package.json` file and not in any of the add-ons `package.json` file.
-   - If you are stuck, you can refer the change [here](https://github.com/avimishra18/volto_educal/blob/48328f5551678f26cae02f1bdc6268b2de47ad26/package.json#L40-L47)
+   - If you are stuck, you can refer the change [here](https://github.com/avimishra18/volto_educal/blob/48328f5551678f26cae02f1bdc6268b2de47ad26/package.json#L40-L47).
    - For a more detailed guide, on how to install an add-on in volto [visit here](https://6.dev-docs.plone.org/volto/addons/index.html#loading-addon-configuration).
 
-1. Change this line in `src/theme.js` of the bootstrapped project.
+1. Change this line in `src/theme.js` of the volto project.
 
    ```diff
    - import 'semantic-ui-less/semantic.less';
