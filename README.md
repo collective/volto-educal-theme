@@ -6,20 +6,20 @@
 <details>
   <summary> Table of content! </summary>
 
-- [About 💡](#about---)
-- [Features ✨](#features--)
-- [Features requiring Customization 🔧](#features-requiring-customization---)
-- [Community add-ons used 👥 📦](#community-add-ons-used------)
-- [Installation 🚀](#installation---)
-- [Creating the Front Page 📹](#creating-the-front-page---)
-- [Screenshot 📸](#screenshot---)
+- [About 💡](#about-)
+- [Features ✨](#features-)
+- [Features requiring Customization 🔧](#features-requiring-customization-)
+- [Community add-ons used 👥 📦](#community-add-ons-used--)
+- [Installation 🚀](#installation-)
+- [Creating the Front Page 📹](#creating-the-front-page-)
+- [Screenshot 📸](#screenshot-)
 
 </details>
 
 ## About 💡
 
 - A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-docs.plone.org/volto/addons/index.html) based on [educal theme](https://themeforest.net/item/educal-online-learning-and-education-vue-js-template/37099827).
-- This repository is the work product of [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022 🌞 project - [Create new Volto theme](https://summerofcode.withgoogle.com/programs/2022/projects/M2LAPzxL) developed for the [Plone Foundation](https://summerofcode.withgoogle.com/programs/2022/organizations/plone-foundation) 🔵 under the mentorship 🧑🏻‍🏫 of @nileshgulia1, @tkimnguyen & @jackahl.
+- This repository is the work product of [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022 🌞 project - [Create new Volto theme](https://summerofcode.withgoogle.com/programs/2022/projects/M2LAPzxL) developed for the [Plone Foundation](https://summerofcode.withgoogle.com/programs/2022/organizations/plone-foundation) 🔵 under the mentorship 🧑🏻‍🏫 of [@nileshgulia1](https://github.com/nileshgulia1), [@tkimnguyen](https://github.com/tkimnguyen) & [@jackahl](https://github.com/jackahl).
 
 ![](/assets/github/preview.gif)
 
