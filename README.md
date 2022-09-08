@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# volto-educal-theme 🎨
+<h1 align="center"> volto-educal-theme 🎨 </h1>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -12,6 +12,8 @@
 - [Community add-ons used 👥 📦](#community-add-ons-used--)
 - [Installation 🚀](#installation-)
 - [Creating the Front Page 📹](#creating-the-front-page-)
+- [Contributing 👩‍💻](#contributing-)
+- [License 📄](#license-)
 - [Screenshot 📸](#screenshot-)
 
 </details>
@@ -141,6 +143,14 @@
 [![IMAGE ALT TEXT](/assets/github/video_thumbnail.png)](https://www.youtube.com/watch?v=jxbq_OHJUIo 'Creating the Front Page | volto-educal-theme')
 
 </details>
+
+## Contributing 👩‍💻
+
+Contributions are welcome. This project is under Plone [Collective](https://github.com/collective). Visit [collective's documentation](https://collective.github.io/) to know more.
+
+## License 📄
+
+Distributed under the `MIT` License. See [LICENSE](/LICENSE) for more information.
 
 ## Screenshot 📸
 
