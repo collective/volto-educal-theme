@@ -48,8 +48,10 @@ class Header extends Component {
     token: null,
   };
 
-  componentDidMount() {
-    this.props.getVocabulary({ vocabNameOrURL: vocabulary });
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.token && nextProps.token !== this.props.token) {
+      this.props.getVocabulary({ vocabNameOrURL: vocabulary });
+    }
   }
 
   /**
@@ -67,7 +69,7 @@ class Header extends Component {
                 <Logo />
               </div>
               <div className="headerLeftSeparator"></div>
-              {this.props.vocabularyItems.length > 0 ? (
+              {this.props.token && this.props.vocabularyItems.length > 0 ? (
                 <div className="headerCategoryContainer">
                   <div className="categoryIcon">
                     <Icon name={HamburgerIcon} size="16px" />

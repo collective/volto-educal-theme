@@ -2,9 +2,24 @@
 
 # volto-educal-theme 🎨
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary> Table of content! </summary>
+
+- [About 💡](#about---)
+- [Features ✨](#features--)
+- [Features requiring Customization 🔧](#features-requiring-customization---)
+- [Community add-ons used 👥 📦](#community-add-ons-used------)
+- [Installation 🚀](#installation---)
+- [Creating the Front Page 📹](#creating-the-front-page---)
+- [Screenshot 📸](#screenshot---)
+
+</details>
+
 ## About 💡
 
-A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-docs.plone.org/volto/addons/index.html) based on [educal theme](https://themeforest.net/item/educal-online-learning-and-education-vue-js-template/37099827).
+- A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-docs.plone.org/volto/addons/index.html) based on [educal theme](https://themeforest.net/item/educal-online-learning-and-education-vue-js-template/37099827).
+- This repository is the work product of [Google Summer of Code](https://summerofcode.withgoogle.com/) 2022 🌞 project - [Create new Volto theme](https://summerofcode.withgoogle.com/programs/2022/projects/M2LAPzxL) developed for the [Plone Foundation](https://summerofcode.withgoogle.com/programs/2022/organizations/plone-foundation) 🔵 under the mentorship 🧑🏻‍🏫 of @nileshgulia1, @tkimnguyen & @jackahl.
 
 ![](/assets/github/preview.gif)
 
@@ -31,7 +46,7 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 
 1. Categorization of pages based on tags using the _categorization menu_ present in the left side of the header.
 
-   **_NOTE:_** This feature requires the API call to Keywords [vocabulary](https://plonerestapi.readthedocs.io/en/latest/vocabularies.html) `/++api++/@vocabularies/plone.app.vocabularies.Keywords?b_start=0` which is by default only available to authenticated users.
+   **_NOTE:_** This feature requires the API call to Keywords [vocabulary](https://plonerestapi.readthedocs.io/en/latest/vocabularies.html) `/++api++/@vocabularies/plone.app.vocabularies.Keywords?b_start=0` which is by default only available to authenticated users. Currently, this menu is only visible when the user is authenticated. You can make changes in [Header.jsx](src/customizations/components/theme/Header/Header.jsx) as per the requirements.
 
    ![](/assets/github/category_menu_preview.gif)
 
@@ -117,6 +132,15 @@ A [volto](https://plone.org/what-is-plone/volto) theme [add-on](https://6.dev-do
 1. [Bootstrap](https://github.com/plone/volto#bootstrap-the-plone-api-backend) the Plone API backend. Alternatively, you can visit the [official documentation](https://docs.plone.org/manage/installing/index.html) for other installation options.
 1. Run `yarn` to install the node modules. 📦
 1. Run `yarn start` command to start the volto server! 🍻
+
+## Creating the Front Page 📹
+
+<details>
+  <summary> Click to watch video! </summary>
+
+[![IMAGE ALT TEXT](/assets/github/video_thumbnail.png)](https://www.youtube.com/watch?v=jxbq_OHJUIo 'Creating the Front Page | volto-educal-theme')
+
+</details>
 
 ## Screenshot 📸
 
