@@ -1,8 +1,9 @@
 {
   "name": "@plone-collective/volto-educal-theme",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "volto-educal-theme: Volto add-on",
   "main": "src/index.js",
+  "author": "Avi Mishra",
   "license": "MIT",
   "keywords": [
     "volto-addon",
@@ -10,6 +11,9 @@
     "plone",
     "react"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "addons": [
     "@kitconcept/volto-blocks-grid",
     "@plone-collective/volto-block-banner",
@@ -19,7 +23,10 @@
     "@eeacms/volto-tabs-block"
   ],
   "scripts": {
-    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon"
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
+    "release-alpha": "release-it --preRelease=alpha",
+    "release-major-alpha": "release-it major --preRelease=alpha",
+    "release": "release-it"
   },
   "dependencies": {
     "@eeacms/volto-tabs-block": "*",
@@ -32,5 +39,9 @@
     "@kitconcept/volto-blocks-grid": "*",
     "@plone/scripts": "*",
     "volto-slate": "*"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "release-it": "^14.11.5"
   }
 }
