@@ -7,9 +7,6 @@
   "npm": {
     "publish": true
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "github": {
     "release": true,
     "releaseName": "${version}"
